@@ -7,6 +7,7 @@ function getUrlVars() {
 }
 function setFromRequest()
 {
+  var request = getUrlVars()["q"];
   if (request.length < 1)
   {
     document.getElementById("mendel") = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
@@ -16,5 +17,4 @@ function setFromRequest()
     document.getElementById("mendel") = "Search request is " + request + ". Entry are denied.";
   }
 }
-var request = getUrlVars()["q"];
 setFromRequest();

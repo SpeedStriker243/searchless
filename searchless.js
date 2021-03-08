@@ -13,7 +13,7 @@ function setFromRequest()
   }
   else
   {
-    document.getElementById('mendel') = "Your search request is " + request + ". Entry are denied.";
+    document.getElementById('mendel') = "Search request is " + request + ". Entry are denied.";
   }
 }
 var request = getUrlVars()["q"];

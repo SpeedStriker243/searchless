@@ -1,9 +1,9 @@
 <h1>Welcome to Searchless</h1>
 <script>
-  const queryString = window.location.search;
-  console.log(queryString);
-  var q = queryString.replace('?q=','');
-  q = q.replace('+',' ');
+  const rawString = window.location.search;
+  console.log(rawString);
+  var filteredString = rawString.replace('?q=','');
+  var distilledString = filteredString.replace('+',' ');
   if (q.length < 1)
   {
     console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
@@ -12,6 +12,6 @@
   else
   {
     console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
-    document.write("Search request is \"" + q + "\". Entry are denied.");
+    document.write("Search request is \"" + distilledString + "\". Entry are denied.");
   }
 </script>

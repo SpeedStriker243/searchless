@@ -3,12 +3,12 @@
 <script>
   const queryString = window.location.search;
   console.log(queryString);
-  var q = queryString.replace('?q=','')
+  var q = queryString.replace('?q=','');
   {
     document.getElementById("mendel") = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
   }
   else
   {
-    document.getElementById("mendel") = "Search request is " + q + ". Entry are denied.";
+    document.getElementById("mendel") = "Search request is \"" + q + "\". Entry are denied.";
   }
 </script>

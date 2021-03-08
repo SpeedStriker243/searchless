@@ -1,13 +1,9 @@
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-      vars[key] = value;
-  });
-  return vars;
-}
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
 function setFromRequest()
 {
-  var request = getUrlVars()["q"];
+  var request = urlParams.get("q")
   if (request.length < 1)
   {
     document.getElementById("mendel") = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";

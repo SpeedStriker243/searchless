@@ -3,8 +3,8 @@
   const rawString = window.location.search;
   console.log(rawString);
   var filteredString = rawString.replace('?q=','');
-  var distilledString = filteredString.replace(/'+'/g,' ');
-  var pureString = distilledString.replace(/'%20'/g,' ')
+  var distilledString = filteredString.replaceAll('+',' ');
+  var pureString = distilledString.replaceAll('%20',' ')
   if (filteredString.length < 1)
   {
     console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");

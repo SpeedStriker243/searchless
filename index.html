@@ -6,10 +6,12 @@
   var q = queryString.replace('?q=','');
   if (q.length < 1)
   {
+    console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
     document.write("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
   }
   else
   {
+    console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
     document.write("Search request is \"" + q + "\". Entry are denied.");
   }
 </script>

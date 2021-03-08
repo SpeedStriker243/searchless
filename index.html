@@ -3,9 +3,7 @@
 <script>
   const queryString = window.location.search;
   console.log(queryString);
-  const urlParams = new URLSearchParams(queryString);
-  var q = urlParams.get('q')
-  if (!urlParams.has('q'))
+  var q = queryString.replace('?q=','')
   {
     document.getElementById("mendel") = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
   }

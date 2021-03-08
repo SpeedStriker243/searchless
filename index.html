@@ -4,6 +4,7 @@
   const queryString = window.location.search;
   console.log(queryString);
   var q = queryString.replace('?q=','');
+  if (q.length < 1)
   {
     document.getElementById("mendel") = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
   }

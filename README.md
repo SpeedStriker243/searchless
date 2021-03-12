@@ -9,3 +9,8 @@ Configure your web browser to use the search engine link as follows:
 ```url
 speedstriker243.github.io/searchless/?q=%s
 ```
+
+## Tracking
+Searchless does not track you. At all. We literally just take your request and deny it, nothing else happens -- you can take a look at the code if you want.
+
+Hard to track someone when your main purpose is to be useless, anyway...

@@ -4,7 +4,7 @@ Intended for use with a web browser that supports custom search engines.
 
 It took me about an hour to get working.
 
-Your browser needs to support JavaScript's replaceAll function for this to work.<br>
+Your browser needs to support JavaScript's `replaceAll` function for this to work.<br>
 Looking for a browser to use this with? I recommend [Ungoogled Chromium](https://github.com/Eloston/ungoogled-chromium).
 
 ## How to use

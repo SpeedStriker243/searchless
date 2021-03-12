@@ -4,6 +4,8 @@ Intended for use with a web browser that supports custom search engines.
 
 It took me about an hour to get working.
 
+(Your browser needs to support JavaScript's replaceAll function for this to work.)
+
 ## How to use
 Configure your web browser to use the search engine link as follows:
 ```url

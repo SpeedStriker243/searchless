@@ -10,7 +10,7 @@ Looking for a browser to use this with? I recommend [Ungoogled Chromium](https:/
 ## How to use
 Configure your web browser to use the search engine link as follows:
 ```url
-speedstriker243.github.io/searchless/?q=%s
+that1m8head.github.io/searchless/?q=%s
 ```
 ### But I'm on Firefox!
 Oh, right... Well, I might work on getting an extension for Firefox and Chrome out there.

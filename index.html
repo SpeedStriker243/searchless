@@ -28,6 +28,11 @@
   h1, h2, h3 {
     font-family: PT Sans;
   }
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+  }
 </style>
 <script>
   const rawString = window.location.search;
@@ -48,12 +53,12 @@
   
   function realSearch(engine)
   {
-    window.location.href(engine + pureString);
+    window.location.href = engine + pureString;
   }
 </script>
 <body>
   <p>Want an actual search engine? We'll forward the request for you.</p>
-  <button onclick="realSearch('https://duckduckgo.com/?=')"><img src="https://github.com/SpeedStriker243/searchless/raw/main/duck_button.png"></button>
+  <button onclick="realSearch('https://duckduckgo.com/?q=')"><img src="https://github.com/SpeedStriker243/searchless/raw/main/duck_button.png"></button>
   <a href="https://searx.ir/"><img src="https://github.com/SpeedStriker243/searchless/raw/main/searx_button.png"></a>
   <a href="https://www.qwant.com/"><img src="https://github.com/SpeedStriker243/searchless/raw/main/qwant_button.png"></a>
 </body>

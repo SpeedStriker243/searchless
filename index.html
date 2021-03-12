@@ -34,6 +34,7 @@
     background: none;
   }
 </style>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script>
   const rawString = window.location.search;
   console.log(rawString);
@@ -51,14 +52,22 @@
     document.write("Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!");
   }
   
-  function realSearch(engine)
-  {
-    window.location.href = engine + pureString;
-  }
+  $("#duck").click(function(){
+     window.location.href = "https://www.duckduckgo.com/?q=" + pureString;
+  });
+  $("#searx").click(function(){
+     window.location.href = "https://www.searx.xyz/?q=" + pureString;
+  });
+  $("#qwant").click(function(){
+     window.location.href = "https://www.qwant.com/?q=" + pureString;
+  });
 </script>
 <body>
     <p>Want an actual search engine? We'll forward the request for you.</p>
-    <button onclick="realSearch('https://duckduckgo.com/?q=')"><img src="https://github.com/SpeedStriker243/searchless/raw/main/duck_button.png"></img></button><br>
-    <button onclick="realSearch('https://searx.xyz/?q='><img src="https://github.com/SpeedStriker243/searchless/raw/main/searx_button.png"></img></button><br>                                                                                                                        
-    <button onclick="realSearch('https://qwant.com/?q='><img src="https://github.com/SpeedStriker243/searchless/raw/main/qwant_button.png"></img></button><br>
+    <img src="https://github.com/SpeedStriker243/searchless/raw/main/duck_button.png" id="duck"/>
+    <br>
+    <img src="https://github.com/SpeedStriker243/searchless/raw/main/searx_button.png" id="searx"/>  
+    <br>                                                                                                                     
+    <img src="https://github.com/SpeedStriker243/searchless/raw/main/qwant_button.png" id="qwant"/>
+    <br>
 </body>

@@ -32,34 +32,13 @@
 	  cursor: pointer;
   }
 </style>
-<script>
-	const rawString = window.location.search;
-	console.log(rawString);
-	var filteredString = rawString.replace('?q=','');
-	var distilledString = filteredString.replaceAll('+',' ');
-	var pureString = distilledString.replaceAll('%20',' ');
-	var msgToDisplay;
-	if (filteredString.length < 1) {
-		msgToDisplay = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
-		document.getElementById("suggest").style.display = "none";
-	}
-	else {
-		msgToDisplay = "Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!";
-		document.getElementById("suggest").style.display = "initial";
-	}
-	console.log(msgToDisplay);
-	document.getElementById("msgToDisplay").innerHTML = msgToDisplay;
-	function realSearch(engine)
-	{
-		window.location.href = engine + pureString;
-	}
-</script>
 <body>
-	<p id="msgToDisplay">We are hanging here...</p>
-	<div id="suggest">
+	<p id="m1">We are hanging here...</p>
+	<div id="s1">
 		<p>Want an actual search engine? We'll forward the request for you.</p>
 		<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton" style="color:">Forward to DuckDuckGo</p>
 		<p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton" style="color:#;">Forward to searX</p>
 		<p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton" style="color:#;">Forward to Startpage</p>
 	</div>
+	<script type="text/javascript" src="searchless.js"></script>  
 </body>

@@ -41,11 +41,11 @@
 	var msgToDisplay;
 	if (filteredString.length < 1) {
 		msgToDisplay = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
-		document.getElementById("SuggestSearching").style.visibility = "hidden";
+		document.getElementById("SuggestSearching").style.display = "none";
 	}
 	else {
 		msgToDisplay = "Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!";
-		document.getElementById("SuggestSearching").style.visibility = "visible";
+		document.getElementById("SuggestSearching").style.display = "initial";
 	}
 	console.log(msgToDisplay);
 	document.write(msgToDisplay);

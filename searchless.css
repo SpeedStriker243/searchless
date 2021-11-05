@@ -4,6 +4,7 @@ body {
 	padding: 0 10px;
 	max-width: 750px;
 	line-height: 1.6;
+	min-height: 100%
 }
 h1 {
 	font-family: sans-serif;
@@ -54,4 +55,12 @@ input[type=text] { width: 40%; }
 	#duck      { color: #de5833; }
 	#searx     { color: #01d7c0; }
 	#startpage { color: #4e79e6; }
+}
+footer {
+	font-size: 12px;
+	padding-top: 10px;
+	max-width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
 }

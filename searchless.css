@@ -6,10 +6,12 @@ body {
 	line-height: 1.6;
 	min-height: 100%
 }
+
 h1 {
 	font-family: sans-serif;
 	line-height: 1.4;
 }
+
 input[type=text], input[type=submit] {
 	border: 2px solid;
 	padding: 3px;
@@ -17,11 +19,22 @@ input[type=text], input[type=submit] {
 	display: inline-block;
 	box-sizing: border-box;
 }
+
 input[type=text] { width: 40%; }
 .searchbutton {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+footer {
+	font-size: 12px;
+	padding-top: 10px;
+	max-width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
 @media (prefers-color-scheme: light) {
 	body {
 		color: #4D4D4D;
@@ -55,12 +68,4 @@ input[type=text] { width: 40%; }
 	#duck      { color: #de5833; }
 	#searx     { color: #01d7c0; }
 	#startpage { color: #4e79e6; }
-}
-footer {
-	font-size: 12px;
-	padding-top: 10px;
-	max-width: 100%;
-	position: absolute;
-	bottom: 0;
-	text-align: center;
 }

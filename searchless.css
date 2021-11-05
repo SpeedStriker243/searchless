@@ -2,7 +2,6 @@ body, h1, h2, h3, code {
 	font-family: sans-serif;
 }
 input[type=text], input[type=submit] {
-	border: 2px solid #173992;
 	padding: 6px;
 	margin: 4px;
 	display: inline-block;
@@ -21,8 +20,9 @@ input[type=text], input[type=submit] {
 		color: #4D4D4D;
 	}
 	input[type=text], input[type=submit] {
+		border: 2px solid #173992;
 		color: #2d3958;
-		background-color: #F4F4F4;
+		background-color: #bac9dc;
 	}
 	#duck      { color: #de5833; }
 	#searx     { color: #13ad9d; }
@@ -32,6 +32,7 @@ input[type=text], input[type=submit] {
 	body {
 		color: #F4F4F4;
 		background-color: #333333;
+		border: 2px solid #F4F4F4;
 	}
 	a {
 		color: #F4F4F4;
@@ -39,6 +40,7 @@ input[type=text], input[type=submit] {
 	input[type=text], input[type=submit] {
 		color: #F4F4F4;
 		background-color: #2d3958;
+		border: 2px solid #F4F4F4;
 	}
 	#duck      { color: #de5833; }
 	#searx     { color: #01d7c0; }

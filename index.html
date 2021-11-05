@@ -33,30 +33,32 @@
   }
 </style>
 <script>
-  const rawString = window.location.search;
-  console.log(rawString);
-  var filteredString = rawString.replace('?q=','');
-  var distilledString = filteredString.replaceAll('+',' ');
-  var pureString = distilledString.replaceAll('%20',' ')
-  if (filteredString.length < 1)
-  {
-    console.log("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
-    document.write("Can't find a search request. Which is just as well, because nothing much would change if you did have one.");
-  }
-  else
-  {
-    console.log("Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!");
-    document.write("Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!");
-  }
-  
-  function realSearch(engine)
-  {
-    window.location.href = engine + pureString;
-  }
+	const rawString = window.location.search;
+	console.log(rawString);
+	var filteredString = rawString.replace('?q=','');
+	var distilledString = filteredString.replaceAll('+',' ');
+	var pureString = distilledString.replaceAll('%20',' ');
+	var msgToDisplay;
+	if (filteredString.length < 1) {
+		msgToDisplay = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
+		document.getElementById("SuggestSearching").style.visibility = "hidden";
+	}
+	else {
+		msgToDisplay = "Your search request, which is \"" + pureString + "\", was successfully thrown in the bin.\nThank you for choosing Searchless as your non-search engine!";
+		document.getElementById("SuggestSearching").style.visibility = "visible";
+	}
+	console.log(msgToDisplay);
+	document.write(msgToDisplay);
+	function realSearch(engine)
+	{
+		window.location.href = engine + pureString;
+	}
 </script>
 <body>
-    <p>Want an actual search engine? We'll forward the request for you.</p>
-    <p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton" style="color:">Forward to DuckDuckGo</p>
-    <p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton" style="color:#;">Forward to searX</p>
-    <p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton" style="color:#;">Forward to Startpage</p>
+	<div id="SuggestSearching">
+		<p>Want an actual search engine? We'll forward the request for you.</p>
+		<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton" style="color:">Forward to DuckDuckGo</p>
+		<p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton" style="color:#;">Forward to searX</p>
+		<p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton" style="color:#;">Forward to Startpage</p>
+	</div>
 </body>

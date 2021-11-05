@@ -6,7 +6,7 @@ var distilledString = filteredString.replaceAll('+',' ');
 var pureString = distilledString.replaceAll('%20',' ');
 var msgToDisplay;
 if (filteredString.length < 1) {
-	msgToDisplay = "Can't find a search request. Which is just as well, because nothing much would change if you did have one.";
+	msgToDisplay = "Can't find a search request. Searchless cannot deny something that does not exist.";
 	document.getElementById("s1").style.display = "none";
 }
 else {

@@ -22,7 +22,7 @@ input[type=text] { width: 40%; }
 	cursor: pointer;
 }
 @media (prefers-color-scheme: light) {
-	html, body {
+	body {
 		color: #4D4D4D;
 		background-color: #E6EBF1;
 	}
@@ -39,7 +39,7 @@ input[type=text] { width: 40%; }
 	#startpage { color: #171b25; }
 }
 @media (prefers-color-scheme: dark) {
-	html, body {
+	body {
 		color: #F4F4F4;
 		background-color: #333333;
 	}

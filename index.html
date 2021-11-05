@@ -48,13 +48,14 @@
 		document.getElementById("SuggestSearching").style.display = "initial";
 	}
 	console.log(msgToDisplay);
-	document.write(msgToDisplay);
+	document.getElementById("p1").innerHTML = msgToDisplay;
 	function realSearch(engine)
 	{
 		window.location.href = engine + pureString;
 	}
 </script>
 <body>
+	<p id="msgToDisplay">We are hanging here...</p>
 	<div id="SuggestSearching">
 		<p>Want an actual search engine? We'll forward the request for you.</p>
 		<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton" style="color:">Forward to DuckDuckGo</p>

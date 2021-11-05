@@ -20,4 +20,4 @@ Searchless does not track you. At all. We literally just take your request and d
 Hard to track someone when your main purpose is to be useless, anyway...
 
 ## Why use it if it's so useless?
-For fun. I also added links to DuckDuckGo, Searx and Qwant as well, which all take the search query you tried to look for and *actually* search for it. So, y'know, it's not THAT useless.
+For fun. I also added links to DuckDuckGo, searX and Startpage as well, which all take the search query you tried to look for and *actually* search for it. So, y'know, it's not THAT useless.

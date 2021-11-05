@@ -1,16 +1,20 @@
-<h1>Welcome to Searchless</h1>
-<link rel="stylesheet" href="searchless.css">
-<body>
-	<form action="https://that1m8head.github.io/searchless">
-		<input type="text" value="" id="searchless" name="q">
-		<input type="submit" value="Search">
-	</form>
-	<p id="m1">We are hanging here...</p>
-	<div id="s1">
-		<p>Want an actual search engine? We'll forward the request for you.</p>
-		<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton">Forward to DuckDuckGo</p>
-		<p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton">Forward to searX</p>
-		<p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton">Forward to Startpage</p>
-	</div>
-	<script type="text/javascript" src="searchless.js"></script>  
-</body>
+<html>
+	<head>
+		<link rel="stylesheet" href="searchless.css">
+	</head>
+	<body>
+		<h1>Welcome to Searchless</h1>
+		<form action="https://that1m8head.github.io/searchless">
+			<input type="text" value="" id="searchless" name="q">
+			<input type="submit" value="Search">
+		</form>
+		<p id="m1">We are hanging here...</p>
+		<div id="s1">
+			<p>Want an actual search engine? We'll forward the request for you.</p>
+			<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton">Forward to DuckDuckGo</p>
+			<p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton">Forward to searX</p>
+			<p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton">Forward to Startpage</p>
+		</div>
+		<script type="text/javascript" src="searchless.js"></script>  
+	</body>
+</html>

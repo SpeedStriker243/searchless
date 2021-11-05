@@ -2,7 +2,7 @@ body, h1, h2, h3, code {
 	font-family: sans-serif;
 }
 input[type=text], input[type=submit] {
-	border: none;
+	border: 2px solid #173992;
 	padding: 6px;
 	margin: 4px;
 	display: inline-block;
@@ -21,8 +21,8 @@ input[type=text], input[type=submit] {
 		color: #4D4D4D;
 	}
 	input[type=text], input[type=submit] {
-		color: #4D4D4D;
-		background-color: #2d3958;
+		color: #2d3958;
+		background-color: #F4F4F4;
 	}
 	#duck      { color: #de5833; }
 	#searx     { color: #13ad9d; }

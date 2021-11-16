@@ -42,4 +42,5 @@ function realSearch(engine)
 {
 	window.location.href = engine + pureString;
 }
+document.getElementById("year").innerHTML = new Date().getFullYear();
 // @license-end

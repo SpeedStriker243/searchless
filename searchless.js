@@ -43,4 +43,5 @@ function realSearch(engine)
 	window.location.href = engine + pureString;
 }
 document.getElementById("year").innerHTML = new Date().getFullYear();
+document.getElementById("age").innerHTML = new Date().getFullYear() - 2021;
 // @license-end

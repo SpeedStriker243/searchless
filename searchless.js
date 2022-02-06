@@ -11,6 +11,7 @@ if (filteredString.length < 1 || pureString == "?q") {
 	document.getElementById("s1").style.display = "none";
 }
 else {
+	document.getElementById('searchless').value = pureString;
 	switch (Math.floor(Math.random() * 6)) {
 	case 0:
 		action = "successfully thrown in the bin";

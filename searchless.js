@@ -7,7 +7,7 @@ var pureString = distilledString.replaceAll('%20',' ');
 var msgToDisplay;
 var action;
 if (filteredString.length < 1 || pureString == "?q") {
-	msgToDisplay = "Can't find a search request. Searchless cannot deny something that does not exist.";
+	msgToDisplay = "Can't find a search request.<br>Searchless cannot deny something that does not exist.";
 	document.getElementById("s1").style.display = "none";
 }
 else {
@@ -34,7 +34,7 @@ else {
 		break;
 }
 console.log(action);
-	msgToDisplay = "Your search request, which is \"" + pureString + "\", was " + action + ".\nThank you for choosing Searchless as your non-search engine!";
+	msgToDisplay = "Your search request, which is \"" + pureString + "\", was " + action + ".<br>Thank you for choosing Searchless as your non-search engine!";
 	document.getElementById("s1").style.display = "initial";
 }
 console.log(msgToDisplay);
@@ -43,6 +43,4 @@ function realSearch(engine)
 {
 	window.location.href = engine + pureString;
 }
-document.getElementById("year").innerHTML = new Date().getFullYear();
-document.getElementById("age").innerHTML = new Date().getFullYear() - 2021;
 // @license-end

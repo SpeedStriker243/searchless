@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://that1m8head.github.io/searchless">
-		<meta property="og:title" content="Searchless">
-		<meta property="og:description" content="The anti-search engine.">
-		<meta property="description" content="The anti-search engine.">
-		<link rel="icon" type="image/svg+xml" href="favicon.svg">
-		<link rel="icon" type="image/png" href="favicon.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-		<link rel="manifest" href="site.webmanifest">
-		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#3c3e57">
-		<meta name="apple-mobile-web-app-title" content="Searchless">
-		<meta name="application-name" content="Searchless">
-		<meta name="msapplication-TileColor" content="#00aba9">
-		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="searchless.css">
-		<title>Searchless</title>
-	</head>
-	<body>
-		<h1 onclick="window.location.href = 'index.html'" style="cursor: pointer;">Welcome to Searchless</h1>
-		<form action="index.html">
-			<input type="text" value="" id="searchless" name="q">
-			<input type="submit" value="Search">
-		</form>
-		<p id="m1">We are hanging here...</p>
-		<div id="s1">
-			<p>Want an actual search engine? We'll forward the request for you.</p>
-			<p onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton">Forward to DuckDuckGo</p>
-			<p onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton">Forward to searX</p>
-			<p onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton">Forward to Startpage</p>
-		</div>
-		<footer>
-			<p>This site was made by <a href="https://that1m8head.github.io">Arsalan Kazmi</a>. View the <a href="https://github.com/That1M8Head/searchless">source on GitHub</a>.
-			<br>The current year is <span id="year"></span>. That makes this website <span id="age"></span> year(s) old.</p>
-		</footer> 
-		<script src="searchless.js"></script>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="title" content="Searchless">
+        <meta property="description" content="The anti-search engine.">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="stylesheet" href="searchless.css">
+        <title>Searchless</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1 onclick="window.location.href = 'index.html'" style="cursor: pointer;">Searchless</h1>
+            <form action="index.html">
+                <input type="text" value="" id="searchless" name="q">
+                <input type="submit" value="Search">
+            </form>
+            <p id="m1">We are hanging here...</p>
+            <div id="s1">
+                <p>Want an actual search engine? We'll forward the request for you.</p>
+                <a onclick="realSearch('https://www.duckduckgo.com/?q=')" id="duck" class="searchbutton">Forward to DuckDuckGo</a><br>
+                <a onclick="realSearch('https://www.searx.xyz/search?q=')" id="searx" class="searchbutton">Forward to searX</a><br>
+                <a onclick="realSearch('https://www.startpage.com/sp/search?q=')" id="startpage" class="searchbutton">Forward to Startpage</a>
+            </div>
+            <p>This stupid project has been brought to you by <a href="https://that1m8head.github.io">Arsalan Kazmi</a>.</p>
+        </div>
+        <script src="searchless.js"></script>
+    </body>
 </html>
